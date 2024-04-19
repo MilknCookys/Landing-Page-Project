@@ -162,3 +162,57 @@ body {
   font-weight: bold;
   font-size: 24px;
 }
+
+.callToAction {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 120px;
+}
+
+.blueBox {
+  background-color: #3882f6;
+  border-radius: 10px;
+}
+
+.blueBoxContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px 0px;
+}
+
+.blueBoxText {
+  display: flex;
+  flex-direction: column;
+  color: #f9faf8;
+}
+
+.callToAction > .blueBox > .blueBoxContent > .blueBoxText > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.callToAction > .blueBox > .blueBoxContent > .blueBoxText > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 0;
+}
+
+.callToAction > .blueBox > .blueBoxContent > button {
+  color: #f9faf8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #3882f6;
+  border: 2px solid #f9faf8;
+  border-radius: 5px;
+  padding: 0px 30px;
+  height: 35px;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
