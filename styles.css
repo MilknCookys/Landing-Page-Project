@@ -6,7 +6,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .header {
@@ -15,7 +15,8 @@ body {
   justify-content: space-between;
   background-color: #1f2937;
   margin: 0;
-  padding: 120px;
+  padding: 0px 120px;
+  flex-grow: 1;
 }
 
 .headerLogo {
@@ -43,7 +44,10 @@ body {
 .introduction {
   background-color: #1f2937;
   display: flex;
-  padding: 120px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 120px;
+  flex-grow: 4;
 }
 
 .content {
@@ -52,7 +56,13 @@ body {
   flex-basis: 50%;
 }
 
-.introduction > .content > h1 {
+.contentColumn {
+  display: flex;
+  flex-direction: row;
+  gap: 43px;
+}
+
+.introduction > .contentColumn > .content > h1 {
   padding: 0px;
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -60,13 +70,13 @@ body {
   font-size: 48px;
 }
 
-.introduction > .content > p {
+.introduction > .contentColumn > .content > p {
   font-family: Arial, Helvetica, sans-serif;
   color: #e5e7eb;
   font-size: 18px;
 }
 
-.introduction > .content > button {
+.introduction > .contentColumn > .content > button {
   all: unset;
   flex-basis: auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -85,6 +95,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
+
   font-family: Arial, Helvetica, sans-serif;
   color: #e5e7eb;
   background-color: #6d747d;
@@ -93,7 +104,9 @@ body {
 .information {
   display: flex;
   flex-direction: column;
-  padding: 120px;
+  justify-content: center;
+  padding: 0px 120px;
+  flex-grow: 4;
 }
 
 .information > h1 {
@@ -117,6 +130,8 @@ body {
 }
 
 .boxText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -140,13 +155,15 @@ body {
 .quote {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #e5e7eb;
   margin: 0;
-  padding: 120px;
+  padding: 0px 120px;
+  flex-grow: 4;
 }
 
 .quote > p {
-  margin: 0;
+  margin: 0 63px;
   font-family: Arial, Helvetica, sans-serif;
   color: #434343;
   font-weight: 200;
@@ -155,6 +172,7 @@ body {
 }
 
 .thor {
+  margin-right: 63px;
   display: flex;
   justify-content: flex-end;
   font-family: Arial, Helvetica, sans-serif;
@@ -166,8 +184,10 @@ body {
 .callToAction {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0;
-  padding: 120px;
+  padding: 0px 120px;
+  flex-grow: 4;
 }
 
 .blueBox {
@@ -215,4 +235,21 @@ body {
   text-align: center;
   margin: 0;
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 120px;
+  background-color: #1f2937;
+  flex-grow: 1;
+}
+
+.footer > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f9faf8;
 }
