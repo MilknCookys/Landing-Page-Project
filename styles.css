@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2937;
+  margin: 0;
+  padding: 5px 200px;
+}
+
+.headerLogo {
+  color: #f9faf8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.headerLinks {
+  list-style-type: none;
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
